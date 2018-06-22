@@ -26,9 +26,9 @@ Enter option:
 2. getChange
 3. Exit
 
-if user enters options 1 or 2, user is going to be asked to enter cents.
+Please select a valid option (e.g 1,2), and then enter cents.
 
 For example if the user selects option 2 and enters cents as 566 the output will be like this:
 [ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, FIFTY_CENT, TEN_CENT, FIVE_CENT, ONE_CENT]
 
-When user select option 2,  if there is no sufficient coinage the app will throw NotSufficientCoinageException.
+When user select option 2, and if there is no sufficient coinage the app will throw NotSufficientCoinageException.

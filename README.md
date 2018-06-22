@@ -32,3 +32,5 @@ For example if the user selects option 2 and enters cents as 566 the output will
 [ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, FIFTY_CENT, TEN_CENT, FIVE_CENT, ONE_CENT]
 
 When user select option 2, and if there is no sufficient coinage the app will throw NotSufficientCoinageException.
+
+In option 2, the application updates coin inventory properties file.

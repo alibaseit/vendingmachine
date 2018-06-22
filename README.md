@@ -3,17 +3,20 @@ Vending Machine
 The application is a command line java application.
 
 It is a maven application.
-For creating jar file please use maven. The maven command for creating a runnable jar file is as below
+For creating jar file please use maven. The maven command for creating a runnable jar file is:
 mvn clean package
 
-Maven is creating jar file under target directory.
+Maven is creates jar file under target directory.
 
 For running the application the command is
-java -jar vending-machine.jar
+java -jar target/vending-machine.jar
 
-The application needs coin-inventory.properties inventory file must be under the current directory.
+The application needs coin-inventory.properties file, and it must be under the current directory.
 
-When the app starts to run an option menu is going to be displayed on the screen.
+When the app starts to user should select an option from menu that is displayed on screen.
+
+Application Menu
+***********************************************************************************************
 
 Please enter a valid option
 Enter option:

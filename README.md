@@ -1,4 +1,4 @@
-#Vending Machine
+***Vending Machine***
 
 The application is a command line java application.
 
@@ -17,7 +17,7 @@ The application needs coin-inventory.properties file, and it must be under the s
 
 When the app starts Application Menu is going to appear on screen. The user should select a valid option from the menu.
 
-###Application Menu
+**pplication Menu**
 ***********************************************************************************************
 
 Please enter a valid option

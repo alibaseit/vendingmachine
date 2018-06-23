@@ -12,7 +12,7 @@ public class InventoryTest {
 
     @Test
     public void testPropertiesLoad() throws Exception {
-        InventoryUtil.setPropertiesFileName("coin-inventory-test.properties");
+        InventoryUtil.setPropertiesFileName("src/test/resources/coin-inventory-test.properties");
         Inventory inventory = new Inventory();
         final Set<Map.Entry<Coin, Integer>> entries = inventory.getInventory().entrySet();
         Map<Coin, Integer> inventoryList = inventory.getInventory();

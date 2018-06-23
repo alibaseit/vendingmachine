@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
 public class VendingMachineTest {
     @Before
     public void setUp() {
-        InventoryUtil.setPropertiesFileName("coin-inventory-test.properties");
+        InventoryUtil.setPropertiesFileName("src/test/resources/coin-inventory-test.properties");
     }
 
     @Test

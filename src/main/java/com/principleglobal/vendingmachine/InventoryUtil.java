@@ -3,6 +3,7 @@ package com.principleglobal.vendingmachine;
 import com.principleglobal.vendingmachine.exception.InventoryLoadingException;
 import com.principleglobal.vendingmachine.exception.InventorySavingException;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -21,7 +22,7 @@ import java.util.logging.Logger;
 public class InventoryUtil {
     private static final Logger LOGGER = Logger.getLogger(InventoryUtil.class.getName());
 
-    private static String propertiesFile = "coin-inventory.properties";
+    private static String propertiesFile = System.getProperty("user.dir") + File.separator + "coin-inventory.properties";
 
     /**
      * load inventory from properties file
@@ -29,6 +30,7 @@ public class InventoryUtil {
      * @return
      */
     public static Map<Coin, Integer> loadInventory() {
+//        String file = System.getProperty("user.dir") + File.separator + propertiesFile;
         Map<Coin, Integer> inventory = new HashMap<>();
         try (FileInputStream input = new FileInputStream(propertiesFile)) {
             Properties prop = new Properties();

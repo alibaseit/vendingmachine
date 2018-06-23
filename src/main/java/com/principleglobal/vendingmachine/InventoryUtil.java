@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,15 +24,18 @@ import java.util.logging.Logger;
 public class InventoryUtil {
     private static final Logger LOGGER = Logger.getLogger(InventoryUtil.class.getName());
 
-    private static String propertiesFile = System.getProperty("user.dir") + File.separator + "coin-inventory.properties";
+    private static String propertiesFile;
 
+    static {
+        Path path = Paths.get(Main.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+        propertiesFile = path.getParent() + File.separator + "coin-inventory.properties";
+    }
     /**
      * load inventory from properties file
      *
      * @return
      */
     public static Map<Coin, Integer> loadInventory() {
-//        String file = System.getProperty("user.dir") + File.separator + propertiesFile;
         Map<Coin, Integer> inventory = new HashMap<>();
         try (FileInputStream input = new FileInputStream(propertiesFile)) {
             Properties prop = new Properties();

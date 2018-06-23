@@ -32,5 +32,5 @@ the computed output will be:
 [ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, FIFTY_CENT, TEN_CENT, FIVE_CENT, ONE_CENT]
 
 
-In option 2 selection, if the inventory is not sufficient, the app will throw NotSufficientCoinageException exception.
+If option 2 selected, and the inventory is not sufficient, the app will throw NotSufficientCoinageException exception.
 And also the option 2 updates coin inventory properties file.

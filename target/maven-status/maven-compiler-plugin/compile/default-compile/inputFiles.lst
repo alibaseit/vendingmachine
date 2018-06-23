@@ -1,9 +1,0 @@
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/Inventory.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/exception/InventoryLoadingException.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/Main.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/exception/InventorySavingException.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/exception/NotSufficientCoinageException.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/Coin.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/VendingMachine.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/IVendingMachine.java
-/home/dogan/development/prog/vendingmachine/src/main/java/com/principleglobal/vendingmachine/InventoryUtil.java

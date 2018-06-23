@@ -1,9 +1,0 @@
-com/principleglobal/vendingmachine/exception/InventorySavingException.class
-com/principleglobal/vendingmachine/Main.class
-com/principleglobal/vendingmachine/InventoryUtil.class
-com/principleglobal/vendingmachine/exception/NotSufficientCoinageException.class
-com/principleglobal/vendingmachine/IVendingMachine.class
-com/principleglobal/vendingmachine/Coin.class
-com/principleglobal/vendingmachine/Inventory.class
-com/principleglobal/vendingmachine/VendingMachine.class
-com/principleglobal/vendingmachine/exception/InventoryLoadingException.class

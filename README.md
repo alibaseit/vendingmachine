@@ -4,7 +4,7 @@ The application is a command line application.
 
 For creating jar file and executing it ...
 ### Step 1:
-Create a clone of git repository on your machine
+Create a clone of git repository on your machine <br/>
 `git clone git@github.com:alibaseit/vendingmachine.git`
 
 

@@ -1,36 +1,36 @@
-Vending Machine
+#Vending Machine
 
 The application is a command line java application.
 
 For creating jar file please use maven.
 The maven command for creating a runnable jar file is:
 
-mvn clean package
+`mvn package`
 
 Jar file is going to be created under target directory.
 
 For running the application the command is
 
-java -jar target/vending-machine.jar
+`java -jar target/vending-machine.jar`
 
-The application needs coin-inventory.properties file, and it must be under the current directory.
+The application needs coin-inventory.properties file, and it must be under the same directory with jar.
 
-When the app starts a menu is going to appear on screen. The user should select a valid option from menu.
+When the app starts Application Menu is going to appear on screen. The user should select a valid option from the menu.
 
-Application Menu
+###Application Menu
 ***********************************************************************************************
 
 Please enter a valid option
-Enter option:
 1. getOptimalChange
 2. getChange
 3. Exit
 
-Please select a valid option (e.g 1,2), and then enter cents.
+Please select a valid option (e.g 1,2). If option 1 or 2 is selected then user is asked to enter cents value.
 
-For example if the user selects option 2 and enters cents as 566 the output will be like this:
+For example if the user selects option 2 and enters cents as 566,
+the computed output will be:
 [ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, ONE_EURO, FIFTY_CENT, TEN_CENT, FIVE_CENT, ONE_CENT]
 
-When user select option 2, and if there is no sufficient coinage the app will throw NotSufficientCoinageException.
 
-In option 2, the application updates coin inventory properties file.
+In option 2 selection, if the inventory is not sufficient, the app will throw NotSufficientCoinageException exception.
+And also the option 2 updates coin inventory properties file.

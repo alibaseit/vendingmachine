@@ -9,13 +9,13 @@ Create a clone of git repository on your machine
 
 
 ### Step 2:
-Create a runnable jar by using maven.
+Create a runnable jar by using maven. <br/>
 `mvn package`
-
+<br/>
 Jar file is going to be created under target directory.
 
 ### Step 3:
-Run the application.
+Run the application. <br/>
 `java -jar target/vending-machine.jar`
 
 The application needs coin-inventory.properties file, and it must be under the same directory with jar.

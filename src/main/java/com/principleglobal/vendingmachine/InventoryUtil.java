@@ -3,12 +3,9 @@ package com.principleglobal.vendingmachine;
 import com.principleglobal.vendingmachine.exception.InventoryLoadingException;
 import com.principleglobal.vendingmachine.exception.InventorySavingException;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;

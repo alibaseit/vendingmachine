@@ -1,8 +1,14 @@
 package com.principleglobal.vendingmachine;
 
+import java.io.File;
+import java.net.URISyntaxException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
+
+    private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
     private static Scanner scanner = new Scanner(System.in);
     private static final int OPTIMAL_CHANGE = 1;
@@ -17,8 +23,10 @@ public class Main {
         int cents = scanner.nextInt();
         if (option == OPTIMAL_CHANGE)
             System.out.println(vendingMachine.getOptimalChangeFor(cents));
-        else if (option == CHANGE)
+        else if (option == CHANGE) {
+            setInventoryPropertyFile();
             System.out.println(vendingMachine.getChangeFor(cents));
+        }
     }
 
     private static void showOptionMenu() {
@@ -32,6 +40,17 @@ public class Main {
             if (option == EXIT)
                 System.exit(0);
             isOptionValid = (option == OPTIMAL_CHANGE || option == CHANGE);
+        }
+    }
+
+    private static void setInventoryPropertyFile() {
+        try {
+            String path = new File(Main.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParent();
+            String propertiesFile = path + File.separator + "coin-inventory.properties";
+            System.out.println(path);
+            InventoryUtil.setPropertiesFileName(propertiesFile);
+        } catch (URISyntaxException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
         }
     }
 }

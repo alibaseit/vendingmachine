@@ -26,10 +26,6 @@ public class InventoryUtil {
 
     private static String propertiesFile;
 
-    static {
-        Path path = Paths.get(Main.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-        propertiesFile = path.getParent() + File.separator + "coin-inventory.properties";
-    }
     /**
      * load inventory from properties file
      *
